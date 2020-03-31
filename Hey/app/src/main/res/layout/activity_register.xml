@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/registerImage"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:src="@drawable/signup_photo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"/>
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerImage"
+        android:hint="Email..."
+        android:background="@drawable/inputs"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="5dp"
+        android:drawableStart="@drawable/email"
+        />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerEmail"
+        android:hint="Password"
+        android:background="@drawable/inputs"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="5dp"
+        android:drawableStart="@drawable/password"
+        />
+
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/registerPassword"
+        android:layout_alignParentStart="true"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:textColor="@color/colorTitle"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/registerBactLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerButton"
+        android:hint="Click to direct to login."
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="5dp"
+
+        />
+
+</RelativeLayout>
